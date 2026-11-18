@@ -14,7 +14,7 @@ It is designed to help business stakeholders, management teams and decision-make
 The analysis covers nine major dashboard sections:
 
 1. KPI Cards
-![](
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/KPI%20CARDS.png?raw=true)
 3. Sales Performance Overview
 4. Collection Risk Overview
 5. Product and Outlet Performance
