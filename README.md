@@ -81,7 +81,6 @@ The KPI page provides a quick understanding of the organization's financial posi
 ### Page 2: Sales Performance Overview
 ![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/SALES%20PERFORMANCE.png?raw=true)
 The Sales Performance Overview page focuses on revenue generation, profitability and sales distribution.
-
 It provides interactive filters for Region, Outlet Tier and Order Date, allowing users to investigate performance across different business dimensions.
 
 **Key Visualizations:**
