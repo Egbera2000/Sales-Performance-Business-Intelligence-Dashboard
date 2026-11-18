@@ -41,9 +41,8 @@ The primary objectives of this project are to:
 ## 3. Dashboard Structure and Page-by-Page Analysis
 
 ### Page 1: KPI Cards
-!![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/KPI%20CARDS.png?raw=true)
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/KPI%20CARDS.png?raw=true)
 The KPI Cards page provides an executive-level summary of the organization's overall business performance.
-
 It presents the most important financial and operational indicators in a single view, allowing management to quickly understand the company's performance.
 
 **Key Performance Indicators:**
