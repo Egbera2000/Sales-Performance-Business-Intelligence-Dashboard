@@ -178,7 +178,7 @@ The business-level table provides detailed information about outstanding balance
 This allows management to identify outlets with significant unpaid balances and prioritize collection follow-ups.
 
 ### Page 4: Product and Outlet Performance
-
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/PRODUCT%20OVERVIEW.png?raw=true)
 This page evaluates product performance across different product categories, outlet tiers and manufacturers.
 
 It helps the business understand which products contribute most to revenue and how sales are distributed across the market.
