@@ -605,15 +605,16 @@ Based on the dashboard findings, the following actions are recommended:
 - Monitor payment reversals and pending payments.
 - Set appropriate credit limits based on customer payment history.
 
-##  Tools and Technologies
+##6.  Tools and Technologies
 
--Power BI Desktop: data modelling, DAX measures, interactive report design
+**1. Power BI Desktop:** data modelling, DAX measures, interactive report design
 Power Query: type fixes (dates, locale), cleaning
--DAX: CALCULATE, DIVIDE, DISTINCTCOUNT, AVERAGEX, TREATAS, USERELATIONSHIP, ranking and conditional logic
+
+**2. DAX:** CALCULATE, DIVIDE, DISTINCTCOUNT, AVERAGEX, TREATAS, USERELATIONSHIP, ranking and conditional logic
 Data modelling: star schema, dimension and fact tables, date table
 
 ## Data model
-|Type	|Tables|
+| Type	| Tables |
 |---|---:|
 Facts	|FactSales (order lines), vw_OrderCollections (one row per order with paid, pending, reversed, outstanding), Factpayments, FactAgentTarget, FactChannelTarget, FactStateTarget|
 Dimensions	|DimDate, DimAgents, DimRetailers, DimProducts, DimChannel, DimState|
@@ -628,12 +629,12 @@ Core measures (examples):
 
 ## DAX
 
-Total Net Sales   = SUM(FactSales[SalesOrderLines.NetLineAmount])
-Order Count       = DISTINCTCOUNT(FactSales[OrderNumber])
-Profit Margin %   = DIVIDE([Total Gross Profit], [Total Net Sales])
-Collection Rate   = DIVIDE([Confirmed Collection], [Confirmed Collection] + [Outstanding Amount], 0)
-Sales Attainment %      = DIVIDE([Total Net Sales], [Agent Target Sales Amount])
-Collection Attainment % = DIVIDE([Confirmed Collection], [Collection Target])
+**Total Net Sales**   = SUM(FactSales[SalesOrderLines.NetLineAmount])
+**Order Count**       = DISTINCTCOUNT(FactSales[OrderNumber])
+**Profit Margin %**  = DIVIDE([Total Gross Profit], [Total Net Sales])
+**Collection Rate**   = DIVIDE([Confirmed Collection], [Confirmed Collection] + [Outstanding Amount], 0)
+**Sales Attainment %**      = DIVIDE([Total Net Sales], [Agent Target Sales Amount])
+**Collection Attainment %** = DIVIDE([Confirmed Collection], [Collection Target])
 
 ## 7. Conclusion
 
