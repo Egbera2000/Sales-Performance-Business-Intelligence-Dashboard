@@ -457,7 +457,7 @@ The dashboard displays negative collection gaps across Kaduna, Oyo, Lagos, Ogun 
 This indicates that the collection gap is a significant area requiring management attention.
 
 ### Page 9: Target Scorecard
-
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/TARGET%20SCORE%20CARD.png?raw=true)
 The Target Scorecard provides a consolidated performance assessment across sales channels, team leads and geographical regions.
 
 It allows management to compare revenue, sales attainment, profitability and collection efficiency across different business segments.
@@ -605,20 +605,35 @@ Based on the dashboard findings, the following actions are recommended:
 - Monitor payment reversals and pending payments.
 - Set appropriate credit limits based on customer payment history.
 
-## 6. Tools and Technologies
+##  Tools and Technologies
 
-The screenshots demonstrate an interactive Business Intelligence dashboard with KPI cards, slicers, analytical charts, detailed tables and page navigation.
+-Power BI Desktop: data modelling, DAX measures, interactive report design
+Power Query: type fixes (dates, locale), cleaning
+-DAX: CALCULATE, DIVIDE, DISTINCTCOUNT, AVERAGEX, TREATAS, USERELATIONSHIP, ranking and conditional logic
+Data modelling: star schema, dimension and fact tables, date table
 
-The exact software and data-processing technologies are not identifiable from the screenshots alone.
+## Data model
+|Type	|Tables|
+|---|---:|
+Facts	|FactSales (order lines), vw_OrderCollections (one row per order with paid, pending, reversed, outstanding), Factpayments, FactAgentTarget, FactChannelTarget, FactStateTarget|
+Dimensions	|DimDate, DimAgents, DimRetailers, DimProducts, DimChannel, DimState|
 
-The project documentation can be extended to include the actual tools used for:
+## Design rules used:
 
-- Data extraction
-- Data cleaning and transformation
-- Data modeling
-- DAX calculations or equivalent measures
-- Data visualization
-- Dashboard development
+Facts connect only to dimensions, never to other facts.
+The date table joins on the order date and on TargetMonth for targets.
+Targets exist at three levels (agent, channel, state). Each is a separate set of targets, so actuals are compared only with the target at the same level.
+
+Core measures (examples):
+
+## DAX
+
+Total Net Sales   = SUM(FactSales[SalesOrderLines.NetLineAmount])
+Order Count       = DISTINCTCOUNT(FactSales[OrderNumber])
+Profit Margin %   = DIVIDE([Total Gross Profit], [Total Net Sales])
+Collection Rate   = DIVIDE([Confirmed Collection], [Confirmed Collection] + [Outstanding Amount], 0)
+Sales Attainment %      = DIVIDE([Total Net Sales], [Agent Target Sales Amount])
+Collection Attainment % = DIVIDE([Confirmed Collection], [Collection Target])
 
 ## 7. Conclusion
 
@@ -634,17 +649,4 @@ By bringing these business indicators together in one interactive reporting envi
 
 ---
 
-## 8. Project Disclaimer and Data Validation Notes
 
-The figures and observations in this documentation are based on the dashboard screenshots provided.
-
-Before using the report for formal financial decisions, the following should be validated against the underlying data model:
-
-- The dashboard displays total net sales of $249.30M and total gross sales of $247.86M. Their definitions and calculation logic should be reviewed.
-- The overall target attainment KPI displays 16.30%, while the channel scorecard displays a total channel sales attainment of 26.37%. These appear to represent different calculations and should be clearly distinguished.
-- The date slicer displays October 17, 2024 to April 9, 2026. The reporting period and treatment of incomplete months should be confirmed.
-- The monthly gross profit chart and the other sales visualizations should be checked for consistent date filters.
-- Regional and channel figures should be interpreted using their respective aggregation and filter contexts.
-- Currency units and the distinction between sales, collections, outstanding balances and reversed payments should be documented.
-
-These checks will help ensure that the published analysis accurately reflects the underlying business data.
