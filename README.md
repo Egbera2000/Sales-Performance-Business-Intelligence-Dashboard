@@ -615,9 +615,9 @@ Data modelling: star schema, dimension and fact tables, date table
 
 ## Data model
 | Type	| Tables |
-|---|---:|
-Facts	|FactSales (order lines), vw_OrderCollections (one row per order with paid, pending, reversed, outstanding), Factpayments, FactAgentTarget, FactChannelTarget, FactStateTarget|
-Dimensions	|DimDate, DimAgents, DimRetailers, DimProducts, DimChannel, DimState|
+| --- | ---: |
+Facts|FactSales (order lines), vw_OrderCollections (one row per order with paid, pending, reversed, outstanding), Factpayments, FactAgentTarget, FactChannelTarget, FactStateTarget|
+Dimensions|DimDate, DimAgents, DimRetailers, DimProducts, DimChannel, DimState|
 
 ## Design rules used:
 
