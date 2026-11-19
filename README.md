@@ -301,7 +301,7 @@ Self-pickup recorded a profit margin of 21.19%, compared with 21.07% for deliver
 Delivery generated a larger total sales value, approximately $0.19bn, compared with $0.06bn for self-pickup.
 
 ### Page 6: Collection and Credit Exposure
-
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/COLLECTION%20&%20CREDIT%20EXPOSURE.png?raw=true)
 This page focuses on order fulfillment, payment status, delivery performance and outstanding financial exposure.
 
 It provides management with a deeper understanding of the organization's collection and credit position.
