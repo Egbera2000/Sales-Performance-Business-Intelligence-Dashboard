@@ -630,10 +630,15 @@ Core measures (examples):
 ## DAX
 
 **Total Net Sales**   = SUM(FactSales[SalesOrderLines.NetLineAmount])
+
 **Order Count**       = DISTINCTCOUNT(FactSales[OrderNumber])
+
 **Profit Margin %**  = DIVIDE([Total Gross Profit], [Total Net Sales])
+
 **Collection Rate**   = DIVIDE([Confirmed Collection], [Confirmed Collection] + [Outstanding Amount], 0)
+
 **Sales Attainment %**      = DIVIDE([Total Net Sales], [Agent Target Sales Amount])
+
 **Collection Attainment %** = DIVIDE([Confirmed Collection], [Collection Target])
 
 ## 7. Conclusion
