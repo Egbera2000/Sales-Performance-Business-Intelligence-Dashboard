@@ -242,7 +242,7 @@ Other manufacturers include:
 These insights can support product portfolio decisions, manufacturer performance reviews and sales distribution strategies.
 
 ### Page 5: Sales Team, Route to Market and Geographic Execution
-
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/SALES%20TEAM%20ROUTE.png?raw=true)
 This page examines sales performance across geographical regions, distribution channels, stock points, fulfillment types and route-to-market structures.
 
 It provides insights into how the sales organization performs across different territories and distribution networks.
