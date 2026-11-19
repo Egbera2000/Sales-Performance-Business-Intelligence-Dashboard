@@ -126,7 +126,7 @@ Other notable brands include:
 This visualization helps management identify leading brands and evaluate opportunities to improve the performance of other products.
 
 ### Page 3: Collection Risk Overview
-
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/COLLECTION%20RISK.png?raw=true)
 The Collection Risk Overview page examines the organization's ability to recover payments from customers and outlets.
 
 It focuses on confirmed collections, outstanding balances, overdue orders and collection efficiency.
