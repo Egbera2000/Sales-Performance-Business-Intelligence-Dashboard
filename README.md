@@ -365,7 +365,7 @@ Cash recorded the highest confirmed collection value among the displayed payment
 The table also provides a consolidated view of payment performance.
 
 ### Page 7: Product Mix
-
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/PRODUCT%20MIX.png?raw=true)
 The Product Mix page uses a Sankey-style visualization to examine how net sales are distributed across different product dimensions.
 
 It provides a hierarchical view of sales movement from the overall sales value into packaging formats, pack sizes and distribution channels.
