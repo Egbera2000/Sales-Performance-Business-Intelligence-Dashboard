@@ -401,7 +401,7 @@ The 50s pack size contributes approximately $5.13 million, distributed across se
 This visualization helps management understand product configuration preferences and how product formats contribute to sales across different channels.
 
 ### Page 8: Target Attainment
-
+![](https://github.com/Egbera2000/Sales-Performance-Business-Intelligence-Dashboard/blob/main/TARGET%20ATTAINMENT.png?raw=true)
 The Target Attainment page evaluates how effectively the sales organization performs against assigned sales targets.
 
 It combines sales attainment, collection attainment, collection gaps and team-level performance indicators.
